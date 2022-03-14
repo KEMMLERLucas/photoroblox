@@ -19,6 +19,22 @@ document.querySelector('#load_gallery')
 
 
 
+document.querySelector('#next').addEventListener('click', (e) => {
+  console.log("Page suivante zbi");
+  console.log("On vide le dom");
+  document.querySelector("#gallery_container").innerHTML = "";
+  console.log("On affiche les nouvelles images");
+
+  gallery.next().then((data) => {
+    gallerie_ui.display_galerie(data);
+  })
+
+  gallerie_ui.display_galerie(gallery.gallerie);
+
+})
+
+
+
 
 
 
