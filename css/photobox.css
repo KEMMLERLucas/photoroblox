@@ -100,6 +100,17 @@ nav #next {
     display : block;
 }
 
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
 #lightbox {
     width: 100vw;
     height: 100vh;
